@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgba(134, 129, 129, 0);
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.nav_link {
+    height: 100%;
+
+}
+
+.nav_link ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+
+}
+
+.nav_link li {
+    list-style: none;
+    
+
+}
+
+.nav_link li a{
+text-decoration: none;
+color: #FFF;
+padding: 1rem;
+display:  block;
+
+}
+
+.nav_link li:hover {
+    background-color: rgb(161, 69, 69);
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 3px;
+
+}
+
+
+
+.home-img {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-top: 100px;
+    width: 250px;
+    object-fit: cover;
+    height: 250px;
+}
+
+
+.home {
+    background-color: wheat;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.home {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    position: relative;
+    background: #191919;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 7rem;
+
+}
+
+
+
+
+.home-content {
+    position: relative;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.home-content h1 {
+    font-size: 40px;
+    color: aliceblue;
+    letter-spacing: 1.2px;
+    
+}
+
+.home-content h2 {
+    font-size: 25px;
+    color: aliceblue;
+    font-family: 'Courier Prime', monospace;
+
+}
+
+.home-content p {
+    font-size: 20px;
+
+    color: #FFF;
+    max-width: 750px;
+    font-family: 'Courier Prime', monospace;
+
+}
+
+.name {
+    color: #d56e1b;
+}
+
+.home-contact .btn {
+    font-size: 1.1em;
+    height: 50px;
+    width: 130px;
+    border-radius: 20px;
+    margin: 30px;
+    cursor: pointer;
+    border: none;
+
+
+}
+
+.btn:hover {
+
+    background: #d56e1b;
+    transition: 1s;
+    color: rgb(253, 253, 253);
+}
+
+
+.home-contact {
+    display: flex;
+
+}
+
+
+.heading {
+
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #d8690d;
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.about {
+    background-color: #464245;
+    padding: 10px;
+
+}
+
+.about-content {
+    max-width: 1024px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    font-family: 'Courier Prime', monospace;
+
+}
+
+
+.about-details {
+
+    font-weight: 300;
+    color: #fff;
+    padding-left: 5%;
+
+
+}
+
+.details {
+
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: #fff;
+
+}
+
+
+.about_desc p {
+
+    letter-spacing: 1.5px;
+    line-height: 130%;
+    color: #fff;
+
+}
+
+
+.abt-span {
+    font-size: 1.5rem;
+    color: #e88d44;
+    text-align: center;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.about-content {
+    padding-bottom: 60px;
+}
+
+
+.education {
+    background-color: #4244428d;
+    padding: 10px;
+
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: 'Courier Prime', monospace;
+
+
+}
+
+
+.card {
+
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 12px;
+    background-image: url(school.jpg);
+    background-size: cover;
+
+
+}
+
+.card2 {
+    background-image: url(college.jpg);
+
+}
+
+.card:hover {
+
+    transform: translateY(-12px);
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+.inner {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(236, 236, 236);
+
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 12px;
+
+
+}
+
+.title {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 700;
+
+    margin: 0 0 5px 0;
+
+}
+
+.subtitle {
+    color: #d56e1b;
+    text-align: center;
+}
+
+
+.contact {
+    background-color: #444442;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    padding: 10px;
+
+
+}
+
+label {
+    color: white;
+    font-weight: 600;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact {
+    background-color: #464245;
+    padding: 10px;
+
+}
+
+.contact-form-text {
+
+    border: none;
+    width: 100%;
+    height: 35px;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+
+}
+
+.contact-form-text2 {
+
+    width: 100%;
+    height: 250px;
+
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-form-text3 {
+
+    width: 100%;
+    height: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.submitContainer{
+    text-align: center;  
+}
+
+button[type="submit"] {
+    height: 30px;
+    font-weight: bolder;
+    width: 150px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #dd6f2b;
+    
+}
+
+ @media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+    
+        display: flex;
+    
+    }
+
+    .nav_link {
+        display: none; 
+        width: 100%
+       
+    }
+
+
+    .nav_link ul{
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .nav_link ul li{
+        text-align: center;
+    
+    }
+
+    .nav_link ul li a{
+        padding: .5rem, 1rem;
+    
+    }
+
+    .nav_link.active {
+        display: flex;
+    }
+
+    .contact {
+      
+        padding: 40px;
+    
+    }
+
+} 
+
+@media (max-width: 800px) {
+
+
+
+    .open-menu {
+        right: 0;
+        transition: 0.5s;
+    }
+
+  
+
+    .about-details {
+
+
+        padding-top: 15px;
+        padding-left: 0%;
+
+
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+
+}

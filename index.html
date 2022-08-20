@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href='#' class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="nav_link">
+                <ul>
+                    <li class="nav__item"><a href="#home">home</a></li>
+                    <li class="nav__item"><a href="#about">about</a> </li>
+                    <li class="nav__item"><a href="#education">education</a></li>
+                    <li class="nav__item"><a href="#contact"> contact</a></li>
+                </ul>
+            </div>
+
+
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="home" , class="home">
+            <div class="home-content">
+                <div class="home-img">
+                    <img src="./img.jpg" alt="" />
+                </div>
+
+                <div class="home-text">
+                    <h1>Hi! I am <span class="name">Anantha Krishnan</span></h1>
+                    <h2 class="role">Web Developer | Software Engineer</h2>
+                    <p class="desc">
+                        As a growing web designer, I'm keen to work with leading teams to develop my abilities and gain
+                        experience. I have experience in developing webpages, graphic design, and UI/UX.
+                    </p>
+                </div>
+                <div class="home-contact">
+                    <a href="./resume.pdf" download="resume.pdf"><button class="btn">Resume</button></a>
+                    >
+                    <a href="#contact"><button class="btn">Contact</button></a>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="heading">about</h2>
+
+
+            <div class="about-content">
+                <div class="about_desc">
+                    <span class="abt-span">About Me and Academic Honesty</span>
+                    <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No
+                        part of this assessment has been copied manually or electronically from any other source
+                        (including web sites) except for the information supplied by the WEB222 instructors and / or
+                        made available in this assessment for my use. I also declare that no part of this assignment has
+                        been distributed to other students.</p>
+
+                    <p><strong>DATE : </strong>Aug 17, 2022</p>
+                </div>
+                <div class="about-details">
+                    <span class="abt-span">Basic Information</span>
+                    <table class="details">
+                        <tbody>
+                            <tr>
+                                <td><strong>AGE&emsp;</strong></td>
+                                <td>&emsp;: &emsp;&emsp; 19</td>
+                            </tr>
+                            <tr>
+                                <td><strong>EMAIL </strong></td>
+                                <td>&emsp;: &emsp;&emsp; aarunkumar@myseneca.ca</td>
+                            </tr>
+                            <tr>
+                                <td><strong>LANGUAGE</strong></td>
+                                <td>&emsp;: &emsp;&emsp; English</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CLASS</strong></td>
+                                <td>&emsp;: &emsp;&emsp; ZDD</td>
+                            </tr>
+                            <tr>
+                                <td><strong>STUDENT ID</strong></td>
+                                <td>&emsp;: &emsp;&emsp; 134658210</td>
+                            </tr>
+                            <tr>
+                                <td><strong>INSTRUCTOR</strong></td>
+                                <td>&emsp;: &emsp;&emsp; Mark Merrit</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="education" id="education">
+            <h2 class="heading">education</h2>
+
+            <div class="container">
+                <a class="card">
+                    <div class="inner">
+                        <h2 class="title">Sharjah Indian School</h2>
+                        <h4 class="title-sub">High school</h4>
+                        <span class="subtitle"> March 2021</span>
+                    </div>
+                </a>
+
+                <a class="card card2">
+                    <div class="inner">
+                        <h2 class="title">Seneca College</h2>
+                        <h4 class="title-sub">Computer Programming and Analysis</h4>
+                        <span class="subtitle"> Jan 2022 - Dec 2024</span>
+                    </div>
+                </a>
+            </div>
+
+
+            <main>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">contact me</h2>
+
+            <form id="contact-form" action="https://httpbin.org/post" onsubmit="hidePayField()" method="POST">
+                <label for="name">Name: </label>
+                <input id="name" class="contact-form-text" type="text" placeholder="    John Doe" required />
+
+                <label for="email">Email:</label>
+                <input id="email" class="contact-form-text" type="email" placeholder="      jdoe@net.com" required />
+
+                <label for="address">Address:</label>
+                <input id="address" class="contact-form-text" type="text" placeholder="     51 Welsh St" required>
+
+                <label for="city">City: </label>
+                <input id="city" class="contact-form-text" type="text" list="cities" name="city"
+                    placeholder="      Toronto" required>
+                <datalist id="cities">
+                    <option value="Toronto"></option>
+                    <option value="Calgary"></option>
+                    <option value="Halifax"></option>
+                    <option value="Scarborough"></option>
+                    <option value="Quebec City"></option>
+                    <option value="Montreal"></option>
+                    <option value="Ottawa"></option>
+                    <option value="London"></option>
+                    <option value="Windsor"></option>
+                </datalist>
+
+                <label for="pcode">Postal Code: </label>
+                <input id="pcode" class="contact-form-text" type="text" name="postal" placeholder="     M1K 3S5"
+                    pattern="[A-Za-z][0-9][A-Za-z][ -]?[0-9][A-Za-z][0-9]$" required />
+
+                <label for="phone">Phone:</label>
+                <input id="phone" class="contact-form-text" type="text" name="phone" placeholder="      5635920201">
+
+                <div class="contact-form-text3">
+                    <label for="question">Question:</label>
+                    <input id="question" type="radio" onclick="hidePayField()" checked>
+                    <label for="comment"> Comment:</label>
+                    <input id="comment" type="radio" onclick="hidePayField()">
+                    <label for="hiring">Hiring:</label>
+                    <input id="hiring" type="radio" onclick="revealPayField()">
+                </div>
+
+                <label for="pay-input" id="pay-label" hidden>Hourly rate: </label>
+                <input id="pay-input" type="text" placeholder="$17.99" pattern="^[0-9][0-9]*[.][0-9]*" hidden>
+
+                <label for="message">Message details: </label>
+                <textarea id="message" class="contact-form-text2" placeholder="     
+    Enter your message!" required></textarea>
+
+                <div class="submitContainer">
+                    <button type="submit" value="send">SUBMIT</button>
+                </div>
+
+            </form>
+        </section>
+
+
+
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
